@@ -7,11 +7,16 @@ int main()
   cout << "Enter a number : ";
   cin >> num;
 
-  for( int i = 1; i <= num; i++)
+  for ( int i = 0; i < num; i++)
   {
-    for( int j = 1; j <= num; j++)
+    for ( int j = 0; j < i; j++)
     {
-      cout << "*";
+      cout << " ";
+    }
+    
+    for ( int k = (num - i); k > 0; k--)
+    {
+      cout << k;
     }
     cout << endl;
   }

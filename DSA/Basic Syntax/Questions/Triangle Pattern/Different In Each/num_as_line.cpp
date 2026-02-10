@@ -1,22 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+int main()
 {
   int num;
   cout << "Enter a number : ";
   cin >> num;
 
-  char ch = 'A';
   for ( int i = 0; i < num; i++)
   {
-    for ( int j = 0; j < num; j++)
+    int count = 1;
+    count += i;
+    for ( int j = 0; j <= i; j++)
     {
-      cout << ch << " ";
-      ch++;
+      cout << count << " ";
     }
     cout << endl;
   }
-  cout << "Last alpha : " << ch << endl;
   return 0;
 }
+
+// 1 
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5

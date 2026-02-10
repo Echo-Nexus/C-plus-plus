@@ -7,15 +7,19 @@ int main()
   cout << "Enter a number : ";
   cin >> num;
 
-  for ( int i = 0; i < num; i++)
+  for( int i = 1; i <= num; i++)
   {
-    int count = 1;
-    count += i;
-    for ( int j = 0; j <= i; j++)
+    for( int j = 1; j <= num; j++)
     {
-      cout << count << " ";
+      cout << j;
     }
     cout << endl;
   }
   return 0;
 }
+
+// 12345
+// 12345
+// 12345
+// 12345
+// 12345
